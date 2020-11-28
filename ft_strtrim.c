@@ -6,11 +6,12 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 17:15:00 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/28 13:11:11 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 13:56:52 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char		*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
