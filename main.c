@@ -6,7 +6,7 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 08:29:35 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/26 19:49:48 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 12:06:33 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -268,6 +268,9 @@ int	 main(int argc, char **argv)
 	printf("long min      atoi:%d ft:%d\n", atoi("-9223372036854775808"), ft_atoi("-9223372036854775808"));
 	printf("long max over atoi:%d ft:%d\n", atoi("9223372036854775900"), ft_atoi("9223372036854775900"));
 	printf("long min over atoi:%d ft:%d\n", atoi("-9223372036854775900"), ft_atoi("-9223372036854775900"));
+	printf("unsigned long over atoi:%d ft:%d\n", atoi("18446744073709551615000"), ft_atoi("18446744073709551615000"));
+	printf("unsigned long over atoi:%d ft:%d\n", atoi("-18446744073709551615000"), ft_atoi("-18446744073709551615000"));
+	printf("error              atoi:%d ft:%d\n", atoi("63410682753376583680"), ft_atoi("63410682753376583680"));
 
 	printf("\nft_strdup\n");
 	printf("%s\n", strdup("abctest"));

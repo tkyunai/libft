@@ -6,9 +6,11 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 00:25:46 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/11 08:01:45 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 13:17:12 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_isascii(int c)
 {

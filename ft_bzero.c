@@ -6,7 +6,7 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 18:39:13 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/25 21:19:12 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 12:46:02 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
-
-	if (n == 0)
-		return ;
-	str = (char *)s;
-	while (n--)
-		*str++ = '\0';
+	ft_memset(s, '\0', n);
 }

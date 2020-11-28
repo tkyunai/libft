@@ -6,7 +6,7 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/16 13:28:36 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/22 15:59:34 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 13:02:14 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	int		i;
 	int		j;
 
-	i = 0;
-	j = 0;
 	if (src == NULL)
 		return (0);
+	i = 0;
+	j = 0;
 	while (src[i] != '\0')
 	{
 		if (dstsize != 0 && i < ((int)dstsize - 1))

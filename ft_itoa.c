@@ -6,7 +6,7 @@
 /*   By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 18:48:14 by tkyunai           #+#    #+#             */
-/*   Updated: 2020/11/22 15:45:52 by tkyunai          ###   ########.fr       */
+/*   Updated: 2020/11/28 12:57:11 by tkyunai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int		ft_itostr(char **str, int sign, long n, size_t cnt)
 
 char			*ft_itoa(int n)
 {
-	int	sign;
+	int		sign;
 	long	l;
 	char	*str;
 

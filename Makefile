@@ -6,7 +6,7 @@
 #    By: tkyunai <tkyunai@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/06 07:31:58 by tkyunai           #+#    #+#              #
-#    Updated: 2020/11/22 19:28:55 by tkyunai          ###   ########.fr        #
+#    Updated: 2020/11/28 11:58:53 by tkyunai          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,19 +59,20 @@ BOBJS := $(BSRC:.c=.o)
 CC := gcc
 CFLAGS := -Wall -Wextra -Werror
 
+$(NAME): $(OBJS)
+	ar -rcs $(NAME) $(OBJS)
+
 all: $(NAME)
 
-$(NAME): $(SRCS) $(BSRC)
-			$(CC) $(CFLAGS) -c $(SRCS)
-			$(CC) $(CFLAGS) -c $(BSRC)
+bonus: $(OBJS) $(BOBJS) 
 	ar -rcs $(NAME) $(OBJS) $(BOBJS)
 
 clean:
-	rm -f $(OBJS) $(BOBJS) libft.h.gch
+	rm -f $(OBJS) $(BOBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:		all bonus clean fclean re
